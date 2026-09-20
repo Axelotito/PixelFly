@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
     public bool yaVolo, estaVivo;
     public float valorOffset = 0;
 
-    private float velocidad = 3.0f, fuerzarebote = 4.0f, velocidadAngulo = 15;
+    private float velocidad = 3.0f, fuerzarebote = 4.0f, velocidadAngulo = 15; // aqui podria cambiar los valores si quiero agregar difficultad maybe
     private Button btnvolar;
 
     void Awake()
@@ -57,7 +57,12 @@ public class Player : MonoBehaviour
         }
     }
 
-    private float AsignaPosXCamara()
+    private void AsignaPosXCamara()
+    {
+        CamaraScript.offsetX = Camera.main.transform.position.x - transform.position.x - valorOffset;
+    }
+
+    public float ObtenPosX()
     {
         return transform.position.x;
     }

@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 3
   tags:
   - btnVolar
+  - fondo
+  - piso
+  - tubo
+  - tuboGrupo
   layers:
   - Default
   - TransparentFX
@@ -12,13 +16,13 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - fondoColector
+  - fondo
+  - piso
+  - player
+  - tubos
+  - tubosCollector
+  - tubosGrupo
   - 
   - 
   - 
@@ -41,6 +45,21 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: fondo
+    uniqueID: 3590290691
+    locked: 0
+  - name: piso
+    uniqueID: 1374333363
+    locked: 0
+  - name: tubos
+    uniqueID: 1147167943
+    locked: 0
+  - name: player
+    uniqueID: 832674767
+    locked: 0
+  - name: canvas
+    uniqueID: 96075961
     locked: 0
   m_RenderingLayers:
   - Default
