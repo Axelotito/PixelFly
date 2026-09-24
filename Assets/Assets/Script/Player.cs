@@ -103,6 +103,9 @@ public class Player : MonoBehaviour
                 reproductor.clip = sndMuere;
                 reproductor.Play();
 
+                // activa menu inicio
+                GameManager.instancia.ActivarGameOver();
+
             }
         }
     }

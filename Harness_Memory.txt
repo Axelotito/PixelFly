@@ -1,0 +1,4 @@
+## CONTEXTO ACTUAL DEL PROYECTO (MEMORIA)
+* Mecánicas completadas: El jugador (Player.cs) tiene colisiones con los tubos (ColisionadorTubos.cs) y el fondo (ColisionadorFondo.cs). Funciona el salto y vuelo con entrada del usuario. Los sonidos (muerte, punto, aleteo) están implementados.
+* Siguiente Tarea Pendiente: Implementar la UI del Menú Principal y el GameManager. Necesitamos un botón de "Jugar" que inicie la partida y el movimiento, y un botón de "Reiniciar" al morir.
+* Estructura de Scripts Relevantes: `Player.cs` maneja la física.

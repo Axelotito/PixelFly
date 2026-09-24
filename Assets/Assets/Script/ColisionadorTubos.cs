@@ -5,8 +5,8 @@ public class ColisionadorTubos : MonoBehaviour
     private GameObject[] grupoTubos;
     private float distancia = 5.0f;
     private float ultimaXTubo;
-    private float yminTubo = -3.0f; 
-    private float ymaxTubo = 3.3f;
+    private float yminTubo = -3f; 
+    private float ymaxTubo = 2.7f;
 
     void Awake()
     {
