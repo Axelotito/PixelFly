@@ -36,23 +36,24 @@ public class ColisionadorFondo : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D objColisionado)
     {
-
-        if (objColisionado.tag == "fondo")
+        if (objColisionado.CompareTag("fondo"))
         {
             Vector3 temp = objColisionado.transform.position;
-            float ancho = ((BoxCollider2D)objColisionado).size.x;
-            temp.x = ultimaXFondo + ancho;
+            // Obtenemos el ancho real exacto usando el SpriteRenderer
+            float anchoReal = objColisionado.GetComponent<SpriteRenderer>().bounds.size.x;
 
+            temp.x = ultimaXFondo + anchoReal;
             objColisionado.transform.position = temp;
             ultimaXFondo = temp.x;
         }
 
-        if (objColisionado.tag == "piso")
+        if (objColisionado.CompareTag("piso"))
         {
             Vector3 temp = objColisionado.transform.position;
-            float ancho = ((BoxCollider2D)objColisionado).size.x;
-            temp.x = ultimaXPiso + ancho;
+            // Obtenemos el ancho real exacto usando el SpriteRenderer
+            float anchoReal = objColisionado.GetComponent<SpriteRenderer>().bounds.size.x;
 
+            temp.x = ultimaXPiso + anchoReal;
             objColisionado.transform.position = temp;
             ultimaXPiso = temp.x;
         }
