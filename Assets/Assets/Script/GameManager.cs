@@ -7,7 +7,6 @@ public class GameManager : MonoBehaviour
     public static GameManager instancia;
 
     [UnitHeaderInspectable("Paneles de UI")]
-    [SerializeField] private GameObject panelInicio;
     [SerializeField] private GameObject panelGameOver;
     
     private void Awake()
@@ -24,22 +23,11 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        Time.timeScale = 0f; //estamos en pausa y en el menu
-        if (panelInicio != null)
-        {
-            panelInicio.SetActive(true);
-        }
-        if (panelGameOver != null)
-        {
-            panelGameOver.SetActive(false);
-        }
-    }
+        // Asegura que las físicas corran a velocidad normal nada más cargar la escena
+        Time.timeScale = 1f; 
 
-    public void IniciarJuego() {
-        Time.timeScale = 1f; // se quita el pausa
-        if (panelGameOver != null)
-        {
-            panelInicio.SetActive(false);
+        if(panelGameOver != null){
+            panelGameOver.SetActive(false);
         }
     }
 
@@ -53,12 +41,7 @@ public class GameManager : MonoBehaviour
 
     public void ReiniciarJuego()
     {
-        Time.timeScale = 1f; // reinicia el juego
+        Time.timeScale = 1f; // reinicia el juego a velocidad normal
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
-
-    void Update()
-    {
-        
     }
 }
