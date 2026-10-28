@@ -87,8 +87,10 @@ public class Player : MonoBehaviour
         {
             score++;
             txtScore.text = score.ToString();
-            reproductor.clip = sndPunto;
-            reproductor.Play();
+            if(score%5 == 0){
+                reproductor.clip = sndPunto;
+                reproductor.Play();
+            }
         }
     }
 

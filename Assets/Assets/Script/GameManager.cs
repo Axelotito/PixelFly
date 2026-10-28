@@ -6,42 +6,41 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instancia;
 
-    [UnitHeaderInspectable("Paneles de UI")]
+    [Header("UI")]
     [SerializeField] private GameObject panelGameOver;
+
+    [Header("Audio")]
+    public AudioSource musicaFondo; // Solo controlamos la música aquí
     
     private void Awake()
     {
         if (instancia == null)
-        {
             instancia = this;
-        }
         else
-        {
             Destroy(gameObject);
-        }
     }
 
     private void Start()
     {
-        // Asegura que las físicas corran a velocidad normal nada más cargar la escena
         Time.timeScale = 1f; 
-
-        if(panelGameOver != null){
+        
+        if (panelGameOver != null)
             panelGameOver.SetActive(false);
-        }
     }
 
     public void ActivarGameOver()
     {
         if (panelGameOver != null)
-        {
             panelGameOver.SetActive(true);
-        }
+
+        // Apaga la música general. El script del jugador reproducirá su sonido.
+        if (musicaFondo != null) 
+            musicaFondo.Stop();
     }
 
     public void ReiniciarJuego()
     {
-        Time.timeScale = 1f; // reinicia el juego a velocidad normal
+        Time.timeScale = 1f; 
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
