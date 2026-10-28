@@ -842,7 +842,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CreditosDesplazamiento
   velocidad: 170
   posicionFinalY: 6000
-  nombreMenuPrincipal: Menu principal
+  nombreMenuPrincipal: MenuPrincipal
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

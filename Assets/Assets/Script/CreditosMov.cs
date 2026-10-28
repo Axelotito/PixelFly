@@ -8,7 +8,7 @@ public class CreditosDesplazamiento : MonoBehaviour
     [SerializeField] private float posicionFinalY = 1500f; // Altura donde terminan de subir
 
     [Header("Salida Explicita")]
-    [SerializeField] private string nombreMenuPrincipal = "Menu principal"; // Nombre de tu escena de menú
+    [SerializeField] private string nombreMenuPrincipal = "MenuPrincipal"; // Nombre de tu escena de menú
 
     private RectTransform rectTransform;
 
