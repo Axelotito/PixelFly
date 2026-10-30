@@ -228,7 +228,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -5300}
+  m_AnchoredPosition: {x: 0, y: -3060}
   m_SizeDelta: {x: 1500, y: 3000}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &133215165
@@ -253,8 +253,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: GRACIAS POR JUGAR
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 1cdb8bf55e6c66543a16d488d639eb9e, type: 2}
-  m_sharedMaterial: {fileID: -1341884684156307585, guid: 1cdb8bf55e6c66543a16d488d639eb9e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 73fb50655bc18024b8547d7c5891e6df, type: 2}
+  m_sharedMaterial: {fileID: 2045239351608891626, guid: 73fb50655bc18024b8547d7c5891e6df, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -278,8 +278,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 400
-  m_fontSizeBase: 400
+  m_fontSize: 200
+  m_fontSizeBase: 200
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -388,13 +388,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Creditos\n\nDesarrolladores:\n\nAlvarez Cortes Aureliano\nCruz Granados
-    Luis Axel\nGarcia Perez Emmanuel Abelardo\nVelazquez Bastida Angel\n\nDise\xF1o
-    de Assets Propios:\n\nAlvarez Cortes Aureliano\nCruz Granados Luis Axel\nGarcia
-    Perez Emmanuel Abelardo\nVelazquez Bastida Angel\n"
+  m_text: "Cr\xE9ditos\n\nDesarrolladores:\n\nAlvarez Cortes Aureliano\nCruz Granados
+    Luis Axel\nGarcia Perez Emmanuel Abelardo\nVelazquez Bastida Angel\n\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 1cdb8bf55e6c66543a16d488d639eb9e, type: 2}
-  m_sharedMaterial: {fileID: -1341884684156307585, guid: 1cdb8bf55e6c66543a16d488d639eb9e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 73fb50655bc18024b8547d7c5891e6df, type: 2}
+  m_sharedMaterial: {fileID: 2045239351608891626, guid: 73fb50655bc18024b8547d7c5891e6df, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
